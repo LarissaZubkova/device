@@ -7,11 +7,11 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
-        <a class="logo header-logo" href="#" >
-          <img src="images/svg/logo.svg" width="145" height="36" alt="Логотип DEVICE">
-        </a>
+      <a class="logo header-logo" href="#" >
+        <img src="images/svg/logo.svg" width="145" height="36" alt="Логотип DEVICE">
+      </a>
 
+      <div class="nav-wrapper">
         <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="search-field field">
             <span class="vissually-hidden">Поиск</span>
@@ -20,7 +20,6 @@
           <button class="search-button">Найти</button>
         </form>
         
-        <nav class="header-nav">
           <ul class="user-navigation-list">
             <li class="user-navigation-item">
               <a href="#" class="user-navigation-link">Войти</a>
@@ -33,23 +32,23 @@
               <a href="#" class="user-navigation-link">Корзина</a>
             </li>
           </ul>
-
-          <ul class="site-menu">
-            <li class="site-menu-item">
-              <a href="catalog.html" class="site-menu-link">Каталог товаров</a>
-            </li>
-            <li class="site-menu-item">
-              <a href="delivery.html" class="site-menu-link">Доставка</a>
-            </li>
-            <li class="site-menu-item">
-              <a href="guarantee.html" class="site-menu-link">Гарантия</a>
-            </li>
-            <li class="site-menu-item"></li>
-              <a href="contacts.html" class="site-menu-link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
       </div>
+      <nav>
+        <ul class="site-menu">
+          <li class="site-menu-item">
+            <a href="catalog.html" class="site-menu-link">Каталог товаров</a>
+          </li>
+          <li class="site-menu-item">
+            <a href="delivery.html" class="site-menu-link">Доставка</a>
+          </li>
+          <li class="site-menu-item">
+            <a href="guarantee.html" class="site-menu-link">Гарантия</a>
+          </li>
+          <li class="site-menu-item">
+            <a href="contacts.html" class="site-menu-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -57,18 +56,18 @@
 
       <section class="promo">
         <h2 class="visually-hidden">Промо-товары</h2>
-        <div class="container">
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
 
-          <ol class="slider">
-            <li class="slider-item slider-item-active">
-              <h3 class="visually-hidden">Квадракоптер</h3>
-              <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадракоптер">
+        <ol class="slider">
+          <li class="slider-item slider-item-active">
+            <h3 class="visually-hidden">Квадракоптер</h3>
+            <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадракоптер">
+            <div class="slider-description-wrapper">
               <p class="section-title">Порхает как бабочка, жалит как пчела!</p>
               <p class="section-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <button class="button">Подробнее</button>
@@ -82,10 +81,12 @@
                   Радиус поражения
                 </div>
               </div>
-            </li>
-            <li class="slider-item">
-              <h3 class="visually-hidden">Фитнесбраслет</h3>
-              <img class="slider-image" src="images/slider-2.png" width="560" height="560" alt="Фитнесбраслет" >
+            </div>
+          </li>
+          <li class="slider-item">
+            <h3 class="visually-hidden">Фитнесбраслет</h3>
+            <img class="slider-image" src="images/slider-2.png" width="560" height="560" alt="Фитнесбраслет" >
+            <div class="slider-description-wrapper">
               <p class="section-title">Худеем правильно!</p>
               <p class="section-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <button class="button">Подробнее</button>
@@ -95,10 +96,12 @@
                   Без подзарядки
                 </div>
               </div>
-            </li>
-            <li class="slider-item">
-              <h3 class="visually-hidden">Селфипалка</h3>
-              <img class="slider-image" src="images/slider-3.png" width="560" height="560" alt="Селфипалка" />
+            </div>
+          </li>
+          <li class="slider-item">
+            <h3 class="visually-hidden">Селфипалка</h3>
+            <img class="slider-image" src="images/slider-3.png" width="560" height="560" alt="Селфипалка" />
+            <div class="slider-description-wrapper">
               <p class="section-title">Делай селфи, как Бен Стиллер!</p>
               <p class="section-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               <button class="button">Подробнее</button>
@@ -116,33 +119,33 @@
                   Материал
                 </div>
               </div>
-            </li>
-          </ol>
+            </div>
+          </li>
+        </ol>
 
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 промо товар</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">2 промо товар</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">3 промо фото</span>
-              </button>
-            </li>
-          </ol>
-        </div>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">1 промо товар</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">2 промо товар</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">3 промо фото</span>
+            </button>
+          </li>
+        </ol>
+        
       </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
 
-        <div class="container">
           <ul class="products-list">
             <li class="products-item">
               <a class="products-link" href="#">
@@ -181,29 +184,29 @@
               </a>
             </li>
           </ul>
-        </div>
+      
       </section>
 
-      <section class="advantiges">
+      <section class="advantages">
         <h2 class="vissually-hidden">Преимущества</h2>
 
-        <div class="container">
-          <ul class="advantiges-tubs">
-            <li class="advantiges-item advantiges-item-active"><button class="button tubs-button">Доставка</button></li>
-            <li class="advantiges-item"><button class="button tubs-button">Гарантия</button></li>
-            <li class="advantiges-item"><button class="button tubs-button">Кредит</button></li>
+        <div class="advantages-wrapper">
+          <ul class="advantages-tubs">
+            <li class="advantages-item advantages-item-active"><button class="button tubs-button">Доставка</button></li>
+            <li class="advantages-item"><button class="button tubs-button">Гарантия</button></li>
+            <li class="advantages-item"><button class="button tubs-button">Кредит</button></li>
           </ul>
 
-          <div class="advantiges-cards">
-            <div class="advantiges-card advantiges-card-active">
+          <div class="advantages-cards">
+            <div class="advantages-card advantages-card-active">
               <h3 class="section-title">Доставка</h3>
               <p class="section-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <div class="advantiges-card">
+            <div class="advantages-card">
               <h3 class="section-title">Гарантия</h3>
               <p class="section-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </div>
-            <div class="advantiges-card">
+            <div class="advantages-card">
               <h3 class="section-title">Кредит</h3>
               <p class="section-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </div>
@@ -266,7 +269,6 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
         <a href="#" class="logo footer-logo"></a>
           <img src="images/svg/logo.svg" width="145" height="36" alt="Логотип DEVICE">
         </a>
@@ -315,7 +317,6 @@
             <img src="images/svg/html-academy.svg" width="115" height="33" alt="Разработано HTML Academy">
           </a>
         </div>
-      </div>
     </footer>
   </body>
 </html>
