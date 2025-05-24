@@ -33,7 +33,7 @@
             <a href="#" class="user-navigation-link">Корзина</a>
           </li>
         </ul>
-      </div>>
+      </div>
       <nav>
         <ul class="site-menu">
           <li class="site-menu-item">
@@ -167,9 +167,10 @@
                 </form>
             </section>
     
-            <section class="catalog">
+            <section class="catalog-cards">
                 <h2 class="visually-hidden">Результаты поиска</h2>
-    
+
+              <div class="sort-wrapper">
                 <h3 class="filter-main-title">Сортировка</h3>
                 <details class="select">
                     <summary class="select-button">Популярные</summary>
@@ -199,7 +200,7 @@
                       </a>
                     </li>
                 </ul>
-    
+              </div>
                 <h3 class="visually-hidden">Список товаров</h3>
     
                 <ul class="product-list">
@@ -235,31 +236,34 @@
     
                 <div class="pagination">
                     <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-                    <h3 class="visually-hidden">Список страниц</h3>
-    
-                    <ul class="pagination-list">
-                        <li class="pagination-item">
-                          <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
-                        </li>
-                        <li class="pagination-item pagination-item-active">
-                          <a class="pagination-link">1</a>
-                        </li>
-                        <li class="pagination-item">
-                          <a class="pagination-link" href="#">2</a>
-                        </li>
-                        <li class="pagination-item">
-                          <a class="pagination-link" href="#">3</a>
-                        </li>
-                        <li class="pagination-item">
-                          <a class="pagination-link" href="#">...</a>
-                        </li>
-                        <li class="pagination-item">
-                          <a class="pagination-link" href="#">15</a>
-                        </li>
-                        <li class="pagination-item">
-                          <a class="pagination-link pagination-next" href="#">Вперёд</a>
-                        </li>
-                      </ul>
+
+                    <div class="pagination-nav">
+                      <h3 class="visually-hidden">Список страниц</h3>
+                      <ul class="pagination-list">
+                          <li class="pagination-item">
+                            <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
+                          </li>
+                          <li class="pagination-item pagination-item-active">
+                            <a class="pagination-link">1</a>
+                          </li>
+                          <li class="pagination-item">
+                            <a class="pagination-link" href="#">2</a>
+                          </li>
+                          <li class="pagination-item">
+                            <a class="pagination-link" href="#">3</a>
+                          </li>
+                          <li class="pagination-item">
+                            <a class="pagination-link" href="#">...</a>
+                          </li>
+                          <li class="pagination-item">
+                            <a class="pagination-link" href="#">15</a>
+                          </li>
+                          <li class="pagination-item">
+                            <a class="pagination-link pagination-next" href="#">Вперёд</a>
+                          </li>
+                        </ul>
+                    </div>
+
                 </div>
             </section>
           </div>
@@ -268,7 +272,7 @@
 
     <footer class="page-footer">
           <a href="#" class="logo footer-logo"></a>
-          <img src="images/svg/logo.svg" width="145" height="36" alt="Логотип DEVICE">
+            <img src="images/svg/logo.svg" width="145" height="36" alt="Логотип DEVICE">
           </a>
   
           <div class="footer-content">
