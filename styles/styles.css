@@ -157,7 +157,7 @@ body {
 .contacts-address,
 .contacts-phone {
   color: #ffffff;
-  
+
   font-size: 16px;
   font-style: normal;
   line-height: 29px;
@@ -193,7 +193,7 @@ body {
   font-size: 16px;
   list-style-type: none;
 }
-  
+
 .breadcrumbs-link {
   margin-right: 36px;
   color: #000000;
@@ -246,7 +246,7 @@ body {
   padding: 8px;
 
   color: #444444;
-  
+
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -281,7 +281,7 @@ body {
   font-size: 50px;
   line-height: 50px;
 }
-  
+
 .section-description {
   margin-top: 0;
   margin-bottom: 51px;
@@ -403,7 +403,7 @@ body {
 
 .subscribe-text {
   margin: 0;
-  text-shadow: 
+  text-shadow:
   1px 1px 0 #000000,
   -1px 1px 0 #000000,
   1px -1px 0 #000000,
@@ -440,6 +440,14 @@ body {
   list-style-type: none;
 }
 
+.products-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
 /* Catalog */
 
 .catalog {
@@ -460,12 +468,15 @@ body {
   display: flex;
 }
 
-.products-list {
+.product-list {
   margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: 44px;
+  padding: 70px 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 40px 44px;
   list-style-type: none;
+  background-color: #ffffff;
 }
 
 .products-item {
@@ -487,7 +498,6 @@ body {
 
 .products-link {
   color: #000000;
-
   font-family: "Raleway", sans-serif;
   letter-spacing: -0.36px;
   line-height: 24px;
@@ -509,24 +519,26 @@ body {
   display: flex;
 }
 
-.product-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.product-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card-description {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .product-card-title {
+  margin: 0;
   font-weight: 700;
   line-height: 20px;
+  max-width: 226px;
 }
-  
-  .product-card-link{
-    color: #000000;
-  
-    text-decoration: none;
-  }
-  
-  .product-card-price {
-    color: #444444;
-    letter-spacing: -0,36px;
-  }
+
+.product-card-price {
+  color: #444444;
+  letter-spacing: -0,36px;
+}
