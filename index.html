@@ -115,12 +115,32 @@
 
           <ol class="slider">
             <li class="slider-item slider-item-active">
+              <div class="slider-item-number"></div>
               <h3 class="visually-hidden">Квадракоптер</h3>
               <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадракоптер">
               <div class="slider-description-wrapper">
                 <p class="section-title">Порхает как бабочка, жалит как пчела!</p>
                 <p class="section-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <button class="button promo-button">Подробнее</button>
+                <div class="slider-pagination-wrapper">
+                  <button class="button promo-button">Подробнее</button>
+                  <ol class="slider-pagination">
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                        <span class="visually-hidden">1 промо товар</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">2 промо товар</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">3 промо фото</span>
+                      </button>
+                    </li>
+                  </ol>
+                </div>
                 <div class="feature">
                   <div class="feature-item">
                     <b>800 м</b>
@@ -134,6 +154,7 @@
               </div>
             </li>
             <li class="slider-item">
+              <div class="slider-item-number"></div>
               <h3 class="visually-hidden">Фитнесбраслет</h3>
               <img class="slider-image" src="images/slider-2.png" width="560" height="560" alt="Фитнесбраслет" >
               <div class="slider-description-wrapper">
@@ -149,6 +170,7 @@
               </div>
             </li>
             <li class="slider-item">
+              <div class="slider-item-number"></div>
               <h3 class="visually-hidden">Селфипалка</h3>
               <img class="slider-image" src="images/slider-3.png" width="560" height="560" alt="Селфипалка" />
               <div class="slider-description-wrapper">
@@ -173,23 +195,7 @@
             </li>
           </ol>
 
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 промо товар</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">2 промо товар</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">3 промо фото</span>
-              </button>
-            </li>
-          </ol>
+
         </div>
       </section>
 
@@ -410,5 +416,39 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group login-group">
+              <label class="delivery-field-label" for="delivery-login">Ваше имя:</label>
+              <input class="delivery-form-field field" type="text" id="delivery-login" name="delivery-login" placeholder="Введите имя">
+            </p>
+            <p class="field-group email-group error-message-active">
+              <label class="delivery-field-label" for="delivery-email">Ваш e-mail:</label>
+              <input class="delivery-form-field field" type="email" id="delivery-email" name="delivery-email" placeholder="Почта" required>
+              <span class="error-message" id="email-error">Забавный у вас адрес</span>
+            </p>
+            <p class="field-group delivery">
+              <label class="delivery-field-label" for="delivery">Что нужно привезти:</label>
+              <input class="delivery-form-field field" type="text" id="delivery" name="delivery" placeholder="В свободной форме">
+            </p>
+            <p class="field-group quantity-group">
+              <label class="delivery-field-label" for="quantity">Количество:</label>
+              <span class="quantity-wrapper">
+                <button type="button" class="quantity-button quantity-minus-button"></button>
+                <input class="delivery-form-field field" type="text" id="quantity" name="quantity" value="1" min="1" max="99" step="1">
+                <button type="button" class="quantity-button quantity-plus-button"></button>
+              </span>
+            </p>
+            <button type="submit" class="button delivery-button">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
